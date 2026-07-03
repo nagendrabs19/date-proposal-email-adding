@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 💖</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <h1> Will you go on a date with me?💖 </h1>
+
+    <div class="buttons">
+        <a href="/activity">
+            <button class="yes">YES 😍</button>
+        </a>
+
+        <button class="no" id="noBtn">NO 🙃</button>
+    </div>
+
+    <script>
+        const noBtn = document.getElementById("noBtn");
+
+        noBtn.addEventListener("mouseover", function () {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 100);
+
+            noBtn.style.position = "absolute";
+            noBtn.style.left = x + "px";
+            noBtn.style.top = y + "px";
+        });
+    </script>
+
+<body style="background-image: url('/static/images/yes-or-no.webp');">
+
+<audio autoplay loop>
+    <source src="/static/audio/audio5.wav" type="audio/wav">
+</audio>
+
+    <script>
+        document.addEventListener("click", function () {
+            document.getElementById("bgMusic").play();
+        }, { once: true });
+    </script>
+
+</body>
+</html>
