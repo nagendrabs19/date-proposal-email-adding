@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Date</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body style="background-image: url('/static/images/date choose.webp');">
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+    <source src="/static/audio/audio4.wav" type="audio/wav">
+</audio>
+
+<script>
+document.addEventListener("click", function () {
+    document.getElementById("bgMusic").play();
+}, { once: true });
+</script>
+
+<h1> Choose Your Date — C'mon dude, lock in your date fast😆💖 </h1>
+
+<form action="/final" method="POST">
+
+    <label>📅 Select Date</label>
+    <input type="date" name="date" required>
+
+    <label>⏰ Select Time</label>
+    <input type="time" name="time">
+
+    <br>
+
+    <button type="submit">
+        Next ❤️
+    </button>
+
+</form>
+
+</body>
+</html>
